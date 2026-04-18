@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarea de Investigación - Documentación</title>
+    <style>
+        /* Eliminamos todos los márgenes para que ocupe toda la pantalla */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden; /* Evita que salgan barras de scroll raras */
+            background-color: #f9f8f8;
+        }
+
+        .pantalla-dividida {
+            display: flex;
+            flex-direction: row;
+            width: 100vw;
+            height: 100vh; /* Altura total de la pantalla */
+        }
+
+        iframe {
+            border: none;
+            height: 100%;
+        }
+
+        .video { width: 50%; border-right: 2px solid #333; }
+        .juegos { width: 50%; }
+    </style>
+</head>
+<body>
+    <p style="font-size: 60px;text-align: center;margin: top 20px; ; ">studymatik</p>
+
+    <div class="pantalla-dividida">
+        
+        <iframe class="video" 
+            src="https://www.youtube-nocookie.com/embed/SrX1ZrJYFtA?modestbranding=1&rel=0&showinfo=0" 
+                allowfullscreen>
+        </iframe>
+        
+        <iframe class="juegos" 
+                src="https://www.minijuegos.com">
+        </iframe>
+
+    </div>
+
+</body>
+</html>
